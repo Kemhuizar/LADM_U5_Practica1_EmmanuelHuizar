@@ -26,6 +26,7 @@ import com.google.android.gms.maps.model.MarkerOptions
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.GeoPoint
 import kotlinx.android.synthetic.main.activity_maps.*
+import kotlinx.android.synthetic.main.buscarlocacion.*
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var mMap: GoogleMap
@@ -48,7 +49,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                 button.setText("Todos")
             }else{
                 button.setText("Buscar")
-                editText2.setHint("Ingresa nombre del producto")
+                editText2.setHint("Ingrese nombre o lugar a buscar")
             }
         }
 
@@ -104,6 +105,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         dialogo.setContentView(R.layout.buscarlocacion)
 
         var lista = dialogo.findViewById<ListView>(R.id.lista)
+        var textView2 = dialogo.findViewById<TextView>(R.id.textView2)
 
 
         baseRemota.collection("tecnologico").orderBy("nombre").startAt(s).endAt(s+'\uf8ff')
@@ -115,12 +117,13 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                 dataLista.clear()
                 listaID.clear()
                 for(document in querySnapshot!!){
-                    var cadena = "Localizacion: "+document.getString("nombre")
+                    var cadena = " "+document.getString("nombre")
                     dataLista.add(cadena)
                     listaID.add(document.id)
                 }
                 if(dataLista.size==0){
-                    dataLista.add("No hay pedidos por entregar")
+                    textView2.setText("")
+                    dataLista.add("No hay locaciones encontradas")
                 }
                 var adaptador = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,dataLista)
                 lista.adapter=adaptador
