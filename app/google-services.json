@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "857582899072",
+    "firebase_url": "https://mapa-itt.firebaseio.com",
+    "project_id": "mapa-itt",
+    "storage_bucket": "mapa-itt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:857582899072:android:230690597e18a267b2fb65",
+        "android_client_info": {
+          "package_name": "mx.edu.ittepic.ladm_u5_ejercicio1_geomapatec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "857582899072-3fo3rrqcpu8uot8fk2lbd02bikb32696.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE2JwY9bGZdgAL5t4oD8Go1fDfipdSHqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "857582899072-3fo3rrqcpu8uot8fk2lbd02bikb32696.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:857582899072:android:097d1ee01781508eb2fb65",
+        "android_client_info": {
+          "package_name": "mx.edu.ittepic.ladm_u5_practica1_emmanuelhuizar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "857582899072-3fo3rrqcpu8uot8fk2lbd02bikb32696.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE2JwY9bGZdgAL5t4oD8Go1fDfipdSHqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "857582899072-3fo3rrqcpu8uot8fk2lbd02bikb32696.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

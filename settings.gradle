@@ -1,0 +1,2 @@
+rootProject.name='LADM_U5_Practica1_EmmanuelHuizar'
+include ':app'
